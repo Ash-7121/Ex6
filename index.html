@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dot1 {
+            height: 60px;
+            width: 60px;
+            background-color: #f2b4b4;
+            border-radius: 50%;
+            display: inline-block;
+            place-content: center;
+            margin: auto;
+            margin-top: 25%;
+            margin-inline: 15px;
+        }
+
+        .pink {
+            background-color: #f2b4b4;
+            color: white;
+        }
+
+        .dot2 {
+            height: 60px;
+            width: 60px;
+            background-color: #a9e2cf;
+            border-radius: 50%;
+            display: inline-block;
+            place-content: center;
+            margin: auto;
+            margin-inline: 15px;
+
+        }
+
+        .mint {
+            background-color: #a9e2cf;
+            color: white;
+        }
+
+        .dot3 {
+            height: 60px;
+            width: 60px;
+            background-color: #d8c5e5;
+            border-radius: 50%;
+            display: inline-block;
+            place-content: center;
+            margin: auto;
+            margin-inline: 15px;
+
+        }
+
+        .purple {
+            background-color: #d8c5e5;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center">
+        <span class="dot1" id="dot1"></span>
+        <span class="dot2" id="dot2"></span>
+        <span class="dot3" id="dot3"></span>
+    </div>
+
+</body>
+<script>
+    document.getElementById('dot1').addEventListener('click', function () {
+        var random = Math.random();
+        if (random < 0.5) {
+            document.body.style.backgroundColor = "#f9cdcd";
+            console.log("Your number is less than 0.5");
+            console.log(random);
+        }
+        else {
+            document.body.style.backgroundColor = "#e89292";
+            console.log("Your number is greater than 0.5");
+            console.log(random);
+        }
+    });
+    document.getElementById('dot2').addEventListener('click', function () {
+        var random = Math.random();
+        if (random < 0.5) {
+            document.body.style.backgroundColor = "#c2f4e3";
+            console.log("Your number is less than 0.5");
+            console.log(random);
+        }
+        else {
+            document.body.style.backgroundColor = "#8dd4bc";
+            console.log("Your number is greater than 0.5");
+            console.log(random);
+        }
+    });
+    document.getElementById('dot3').addEventListener('click', function () {
+        var random = Math.random();
+        if (random < 0.5) {
+            document.body.style.backgroundColor = "#eedff8";
+            console.log("Your number is less than 0.5");
+            console.log(random);
+        }
+        else {
+            document.body.style.backgroundColor = "#c8afda";
+            console.log("Your number is greater than 0.5");
+            console.log(random);
+        }    });
+</script>
+
+</html>
